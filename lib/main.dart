@@ -1,8 +1,9 @@
-import 'package:dev_portfolio/responsive/desktop/desktop_home.dart';
-import 'package:dev_portfolio/responsive/mobile/mobile_home.dart';
-import 'package:dev_portfolio/responsive/tablet/tablet_home.dart';
+
+import 'package:dev_portfolio/tablet/tablet_home.dart';
 import 'package:flutter/material.dart';
 
+import 'desktop/desktop_home.dart';
+import 'mobile/mobile_home.dart';
 import 'responsive/responsive_layout.dart';
 
 void main() {

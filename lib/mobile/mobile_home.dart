@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:dev_portfolio/utils/constants.dart';
 import 'package:flutter/material.dart';
 
@@ -12,13 +13,21 @@ class _MobileHomePageState extends State<MobileHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: kBackground,
       appBar: AppBar(
-        title: Text(
+        backgroundColor: kBackground,
+        elevation: 0,
+        centerTitle: true,
+        title: AutoSizeText(
           "The Creative Zee",
-          style: kAppBarText.copyWith(fontSize: 20),
+          style: kAppBarText.copyWith(fontSize: 30),
         ),
       ),
-      body: const Center(child: Text("Mobile")),
+      body: Center(
+          child: Text(
+        "Mobile",
+        style: kPhoneBodyText,
+      )),
     );
   }
 }
